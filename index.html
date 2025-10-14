@@ -108,6 +108,16 @@
           A histogram that compares the two variables, such as the one in Figure 2, gives us a good insight into the reason behind the difference in means. We can see that the meta scores have much higher counts of high reviews,
           while the user score has a greater number of low reviews. This may be part of the reason why the meta score has a slightly better correlation with sales than the user score.
         </p>
+        <figure>
+            <img src="images/1-scores_boxplot.png" alt="Boxplots comparing meta score and user score">
+            <figcaption>Figure 1. Review Scores Boxplots.</figcaption>
+          </figure>     
+          
+        <figure>
+            <img src="images/2-review_scores_histogram.png" alt="Histogram comparing meta score and user score">
+            <figcaption> Figure 2. Review Score Histograms</figcaption>
+        </figure>
+
         <p>
           The meta score is a better predictor of sales than the user score. While the correlation isn’t very strong, it does exist. There is some basis for the reason behind this correlation.
           Many companies send out review copies to critics in hopes that the reviews will boost sales. Critics usually publish their review scores in the days before a game is released.
@@ -130,6 +140,10 @@
           The coefficient of correlation between these two variables was .715, which demonstrates a strong correlation between the number of games released and the total sales of a publisher.
           Because of this strong correlation, I thought creating a scatterplot between the two variables would be useful to analyze the data further. The scatterplot can be seen in Figure 3 below.
         </p>
+        <figure>
+            <img src="images/3-total_sales_number_games_released.jpg" alt="Scatterplot showing the correlation between the number of games released and the total sales of a publisher">
+            <figcaption>Figure 3. Scatterplot of the number of games by a publisher and their total sales</figcaption>
+        </figure>
         <p>
           This correlation does not apply to the number of games released and the publisher’s average meta score. The correlation coefficient between these two variables is -.013,
           which is evidence of no relationship between the number of games released and the average meta score.
@@ -139,6 +153,10 @@
           When we compare the average meta score of 71.145 to the values in Table 2, we prove that meta scores and sales aren’t strongly correlated, as 30% of the observations in Table 2 are below the average.
           This can also be seen in Figure 4, a scatterplot of the number of games released and the meta score.
         </p>
+        <figure>
+            <img src="images/4-metascore_number_games_released.jpg" alt="Scatterplot comparing Meta Score and Number of Games released">
+            <figcaption> Figure 4. Scatterplot of the number of games by a publisher and meta score</figcaption>
+        </figure>
         <p>
           I compared the top ten game publishers by North American sales and by total sales for the past ten years.
           I wanted to know if there is a difference between those with high sales in North America and those with high total sales.
@@ -160,6 +178,10 @@
           Next, I created a plot of the number of games released in relation to the date. I also compared the total sales of games over time, using the patchwork package,
           to see if there was a clear pattern between the number of games released and total sales. This scatterplot can be seen in Figure 5.
         </p>
+        <figure>
+            <img src="images/5-number_of_games_released_and_total_sales_by_month.png" alt="Scatterplot showing pattern between number of games released and total sales">
+            <figcaption> Figure 5. Number of Games Released and Total Sales by Month</figcaption>
+        </figure>
         <p>
           The point at the end should be ignored, as it includes two games yet to be released. The outlier of games released in 2020 should also be ignored,
           as many games were misclassified to this date by the websites.
@@ -176,6 +198,10 @@
           This also holds for the correlation between North American sales and the release date, which has a correlation coefficient of .229.
           Figure 6 shows a graph comparing the sales to the release date.
         </p>
+        <figure>
+            <img src="images/6-total_sales_by_release_date.jpg" alt="Graph comparing the sales to the release date">
+            <figcaption> Figure 6. Total Sales by Release Date</figcaption>
+        </figure>
         <p>
           The trend of frequent outliers appears to be much greater for total sales than it is for North American sales.
           Taking a slice_max of both North American and total sales shows this pattern is likely due to increased sales during the holiday season.
@@ -183,6 +209,10 @@
           Many of the months with the most games released are also in this timeframe. While there was an increase in sales throughout the 2000s,
           the same cannot be said about review scores.
         </p>
+        <figure>
+            <img src="images/7-review_scores_by_release_date.jpg" alt="Ratings of Video Games over Time">
+            <figcaption>Figure 7. Review Scores by Release Date</figcaption>
+        </figure>
         <p>
           Figure 7 shows that the review scores of games see a sharp decrease beginning in 2000. However, the meta scores decreased much more drastically than the user scores during this time.
           While the meta score began to increase again around 2010, the user score continued to decrease. This is reinforced in the correlation coefficients of the two variables.
@@ -191,10 +221,44 @@
         </p>
       </section>
 
-    <section id="conclusion">
-      <h2>4. Conclusion</h2>
-      <p>Conclusion content goes here.</p>
-    </section>
+      <section id="conclusion">
+        <h2>4. Conclusion</h2>
+        <p>
+          In this project, I analyzed three aspects of video game sales: the publisher, the release date, and how a game’s sales and review scores influence each other.
+          In summary, from the analysis questions presented in my proposal, I found the following results.
+        </p>
+      
+        <p>
+          <strong>1.</strong> Is there a strong correlation between a game’s review score and its sales? Is the meta score or the user score a better predictor of a game’s sales?<br>
+          There is limited correlation between review scores and sales. But while the correlation isn’t very strong, it does appear meta score is a better predictor of sales than the user score.
+        </p>
+      
+        <p>
+          <strong>2.</strong> Have the total sales of games seen an increase over the years?<br>
+          There is some correlation between release date and number of games released, but it is not especially strong.
+          There was a peak in the number of games released around 2010 but since there has been a decline.
+        </p>
+      
+        <p>
+          <strong>3.</strong> Which publishers have had the highest sales over the past ten years? Is there a difference between those with high sales in North America and those with high total sales?<br>
+          The top ten publishers are listed above in Table 3. The same ten publishers are present in both total sales and North American sales, just in a different order.
+          Nintendo is solidly in first place with 1.9 billion games sold followed by Activision at number two with 727 million units sold.
+          North American sales accounts for 40–60% of total sales making this region a significant contributor to sales success for game publishers.
+        </p>
+      
+        <p>
+          <strong>4.</strong> Is the console on which a game is released strongly correlated to its ratings? Specifically, are there certain video game consoles that have the highest average ratings of games?<br>
+          The variables needed to answer this question were not present in the collected data.
+          As noted below, this question would be an opportunity for further work on this project.
+        </p>
+      
+        <p>
+          This project has several limitations, including the lack of review scores for games released before the mid-90s, the improper release dates of some games, and the lack of information about the video game consoles.
+          Future work on this project could include finding more sources to create a more complete dataset, analyzing the purchase of different video game consoles to see if the spikes in new video game releases coincide with more people buying video game consoles,
+          and analyzing whether more time in between game releases for a publisher really means a better game (higher sales and review scores).
+        </p>
+      </section>
+      
   </main>
 
   <footer>
